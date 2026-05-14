@@ -1,0 +1,80 @@
+#main{
+    background-color: #262332;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 30px;
+    border-radius: 5px;
+    width: 40%;
+}
+
+#user, #pass{
+    background-color: transparent;
+    border: 2px solid #fb5600;
+    border-radius: 120px;
+    margin-bottom: 25px;
+    width: 90%;
+    padding: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+}
+
+#check-label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+}
+
+#forg-btn, #sign-btn{
+    background-color:transparent;
+    border: none;
+    color: #fb5600;
+    cursor: pointer;
+    
+}
+
+#log-btn{
+    background-color: #fb5600;
+    width: 90%;
+    border:  2px solid #fb5600;
+    border-radius: 120px;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 19px;
+    margin-bottom: 150px;
+    cursor: pointer;
+}
+
+
+#icon a{
+    color: #fb5600;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+}
+
+#icon a:hover{
+    color: #ffffff;
+}
+
+#sign{
+    display: inline-flex;
+    column-gap: 30px;
+    margin-left: 167px;
+}
+
+#forg-btn:hover{
+    color: #ffffff;
+}
+
+#sign-btn:hover{
+    color: #ffffff;
+}
+
+#icon{
+    margin-left: 160px;
+}
+
+#log-btn:hover{
+    border: 2px solid #fb5600;
+    background-color: transparent;
+    color: #fb5600;
+}
