@@ -1,0 +1,73 @@
+#main{
+    background-color: #262332;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 30px;
+    border-radius: 5px;
+    width: 40%;
+}
+
+#email, #password, #confirmpassword{
+    background-color: transparent;
+    border: 2px solid #fb5600;
+    margin-bottom: 25px;
+    width: 91%;
+    padding: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+    border-radius: 120px;
+
+}
+
+#firstname, #lastname{
+    background-color: transparent;
+    border: 2px solid #fb5600;
+    border-radius: 120px;
+    margin-bottom: 25px;
+    width: 43%;
+     padding: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#checkbox-label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+}
+
+#signup-btn{
+    background-color: #fb5600;
+    width: 90%;
+    border: 2px solid #fb5600;
+    border-radius: 120px;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 19px;
+    margin-bottom: 150px;
+    cursor: pointer;
+}
+
+#signin{
+    display: inline-flex;
+    column-gap: 30px;
+    margin-left: 167px;
+}
+
+#signin-btn{
+    background-color:transparent;
+    border: none;
+    color: #fb5600;
+    cursor: pointer;
+    
+}
+
+#signin-btn:hover{
+    color: #ffffff;
+}
+
+#signup-btn:hover{
+    border: 2px solid #fb5600;
+    background-color: transparent;
+    color: #fb5600;
+
+}
+
