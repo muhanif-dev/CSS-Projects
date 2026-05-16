@@ -1,0 +1,310 @@
+body
+{
+    background-color: black;
+    font-family:monospace;
+    color: rgb(41, 156, 147);
+    padding-top: 80px;
+    padding-left: 230px;
+}
+
+p{
+    color: white;
+    font-size: 10px;
+}
+
+.header
+{
+    display:flex;
+    flex-direction: row;
+    column-gap: 250px;
+   
+}
+
+.nav
+{
+    padding-top: 20px;
+    
+}
+.nav, a
+{
+    color:rgb(41, 156, 147) ;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+#search
+{
+    background-color: transparent;
+    border: 2px solid rgb(41, 156, 147);
+    border-radius: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.nav a:hover
+{
+    color: white;
+    text-decoration: underline;
+}
+
+.home, .services
+{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    margin-top: 50px;
+}
+
+.heading
+{
+    width: 60%;
+}
+
+.line
+{
+    display: flex;
+    flex-direction: row;
+    justify-self: start;
+    margin-top: -20px;
+}
+
+.pic
+{
+    width: 50%;
+    height: 80%;
+    margin-top: 20px;
+}
+
+.services{
+    column-gap: 120px;
+    margin-top: 150px;
+}
+
+.btn
+{
+    width: 40%;
+}
+
+.grid
+{
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  column-gap: 5px;
+}
+
+.section-1, .section-2
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.cont-1, .cont-2, .cont-3, .cont-4
+{
+    background-color: rgba(248, 242, 242, 0.116);
+    text-align: center;
+    padding: 10px;
+    border-radius: 0px 50px 0px 50px;
+}
+
+ .cont-2, .cont-3
+ {
+     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(248, 242, 242, 0.116));
+     top:0;
+     left:0;
+ }
+
+.section-1
+{
+   margin-top: -10px;
+}
+
+.section-2{
+    margin-top: 10px;
+}
+
+.btn-1
+{
+    background-color: rgb(41, 156, 147);
+    border: 2px solid rgb(41, 156, 147);
+    border-radius: 120px;
+}
+
+.aboutus
+{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+
+}
+
+.icons
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.aboutus{
+    margin-top: 120px;
+    width: 80%;
+}
+
+.modern, .clean
+{
+    width: 50%;
+    height: 50%;
+    margin-bottom: 10px;
+}
+
+.contact
+{
+    width: 60%;
+    height: 550px;
+    border: 3px solid rgb(41, 156, 147);
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-top: 120px;
+    
+
+}
+
+.form
+{
+    width: 100%;
+    height: 100px;
+    padding-left: 20%;
+}
+
+#name, #email,#number
+{
+    background-color: transparent;
+    border: 2px solid rgb(41, 156, 147);
+    border-radius: 120px;
+    font-size: 12px;
+    padding: 8px;
+    width: 50%;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+#message{
+    background-color: transparent;
+    border: 2px solid rgb(41, 156, 147);
+     color: white;
+    font-size: 12px;
+    padding: 8px;
+    width: 50%;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+#label
+{
+    color: white;
+}
+
+#button, #reset{
+    background-color: transparent;
+    border: 2px solid rgb(41, 156, 147);
+    border-radius: 120px;
+    color: white;
+    font-size: 12px;
+    padding: 8px;
+    width: 25%;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.form #button:hover
+{
+    background-color: rgb(41, 156, 147);
+    border: 2px solid rgb(41, 156, 147);
+    border-radius: 120px;
+    cursor: pointer;
+      color: black;
+}
+
+.form #reset:hover
+{
+    background-color: rgb(41, 156, 147);
+    border: 2px solid rgb(41, 156, 147);
+    border-radius: 120px;
+    cursor: pointer;
+      color: black;
+}
+
+
+
+.btn #button:hover
+{
+    background-color: rgb(41, 156, 147);
+    border: 2px solid rgb(41, 156, 147);
+    border-radius: 120px;
+    cursor: pointer;
+      color: black;
+
+}
+
+.about #button:hover
+{
+    background-color: rgb(41, 156, 147);
+    border: 2px solid rgb(41, 156, 147);
+    border-radius: 120px;
+    cursor: pointer;
+      color: black;
+}
+
+.heading #button:hover
+{
+    background-color: rgb(41, 156, 147);
+    border: 2px solid rgb(41, 156, 147);
+    border-radius: 120px;
+    cursor: pointer;
+    color: black;
+}
+
+.whole
+{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    width: 80%;
+    height: 50vh;
+    margin-left: 150px;
+    margin-top: 100px;
+    padding-top: 20px;
+   
+   
+    
+}
+
+.icon-box-1, .icon-box-2, .icon-box-3, .icon-box-4{
+    width: 21%;
+    height: 45vh;
+    
+    margin-top: 12px;
+    margin-left: 6px;
+    justify-items: center;
+}
+.design
+{
+     background: linear-gradient(rgba(248, 242, 242, 0.116),rgba(0, 0, 0, 0.5));
+     border-radius: 20px;
+    width: 80%;
+}
+
+#search:hover
+{
+    cursor: pointer;
+     background-color: white;
+    border: 2px solid white;
+    border-radius: 120px;
+    cursor: pointer;
+   
+}
