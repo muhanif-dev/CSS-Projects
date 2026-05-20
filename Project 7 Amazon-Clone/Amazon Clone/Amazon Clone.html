@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="Media.css">
+    <style>
+        @media only screen and (min-width:200px) and (max-width:600px){
+   .nav-logo
+        {
+          height: 40px;
+          width: 40px;
+       }             
+  .logo
+         {
+          height: 40px;
+          width: 70px;
+         }
+.nav-address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.deli
+{
+    color: rgba(255, 255, 255, 0.671);
+    padding-left: 15px;
+    font-size: 0.5rem;
+}
+.address-icon p{
+    font-size: 0.7rem;
+}
+.address-icon img{
+    width: 20px;
+}
+
+.nav-search
+{
+    width: 620px;
+    height: 20px;
+    font-size: 2px;
+
+}
+.search-icon
+{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.search-icon img{
+     width: 17px;
+     height: 17px;
+     margin-bottom: 25px;
+     
+}
+
+.search-input{
+          font-size: 0.5rem;
+}
+
+.accountsandlists{
+    display: none;
+}
+.payandorder{
+    display: none;
+}
+
+.language-selection{
+    display: none;
+}
+.order-icon img{
+    width: 15px;
+    height: 15px;
+}
+.order-icon p{
+    font-size: 0.5rem;
+}
+}
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="navbar">
+
+                <!--Navegation Bar Logo Section-->
+                <div class="nav-logo border">
+                    <div class="logo"></div>
+                </div>
+
+                <!--Navegation Bar Address Section-->
+                <div class="nav-address border">
+                    <p class="deli">Deliver to</p>
+                    <div class="address-icon">
+                        <img src="location-dot.svg" alt="icon" style="width: 20px; height: 20px;">
+                        <p class="pak">Pakistan</p>
+                    </div>
+                </div>
+
+                <!--Navegation Search Bar-->
+                <div class="nav-search">
+                   <select class="search-select">
+                           <option value="All" class="all">All</option>
+                   </select>
+                   <input type="text" class="search-input" placeholder="Search Amazon">
+                   <div class="search-icon">
+                    <img src="search.svg" alt="icon">
+                   </div>
+                </div>
+
+                <!--Language Selection-->
+                <div class="language-selection">
+                    <div class="flag-icon">
+                        <img src="flag-usa.svg" alt="icon" class="icon">
+                        <select class="language">
+                             <option value="EN">EN</option>
+                             <option value="UR">UR</option>
+                       </select>
+                   </div>
+              </div>
+
+              <!--Accounts And Lists-->
+               <div class="accountsandlists border">
+                      <div class="sign"> 
+                        <p>Hello, sign in</p>
+                      </div>
+                      <div class="lists">
+                        <select class="list-select">
+                            <option class="option">
+                                Accounts & Lists
+                            </option>
+                        </select>
+                      </div>
+               </div>
+              
+               <!--Payments And Orders-->
+               <div class="payandorder border">
+                    <p class="hello">Payments</p>
+                    <div class="order-icon">
+                        <img src="location-arrow.svg" alt="icon" style="width: 20px; height: 20px;">
+                        <p class="order">Orders</p>
+                    </div>
+                </div>
+
+                <!--Cart-->
+                <div class="cart">
+                     <div class="order-icon">
+                        <img src="cart-shopping.svg" alt="icon">
+                        <p class="order">Orders</p>
+                    </div>
+                </div>
+        </div>
+         
+        <!--Pannel-->
+        <div class="pannel">
+              <div class="cart">
+                     <div class="order-icon">
+                        <img src="bars.svg" alt="icon" style="width: 20px; height: 20px;">
+                        <p class="order">All</p>
+                    </div>
+              </div>
+
+              <!--Ancker Tags-->
+              <div class="anckers">
+                <a href="#">Today's Deals</a>&nbsp;
+                <a href="#">Customer Service</a>
+                <a href="#">Registry</a>
+                <a href="#">Gifts Cards</a>
+                <a href="#">Sell</a>
+              </div>
+
+              <div class="electronics">
+                <a href="#">Shop Deals in Electronics</a>
+              </div>
+        </div>        
+    </header>
+
+    <!--Hero Section-->
+    <div class="hero-section">
+        <div class="gifts">
+                  Find gifts for dads who have it all
+        </div>
+        <div class="gedgets">
+                  <img src="Armchair.png" alt="pic" class="product">
+                  <img src="Render-50.png" alt="pic" class="product" style="padding-bottom: 100px;">
+                  <img src="Sleek-Furniture-for-Modern.png" alt="pic" class="product">
+                  <img src="Render-30.png" alt="pic" class="product"  style="padding-bottom: 100px;">
+        </div>
+    </div>
+
+    <!--Banner-->
+    <div class="hero-banner">
+        <div class="para">
+            <p>You are on Amazon.com. You can also shop on Amazon Pakistan for millions of products with fast local Delivery.</p>
+            <div class="banner-ancker">
+            <a href="#">
+                 Click here to go to Amazon.pk
+            </a>
+        </div>
+        </div>
+    </div>
+
+    <!--Products-->
+    <div class="cards-row1">
+   <div class="card-1">
+    <div class="row-1">
+            <h2>Shop deals in Fashion</h2>
+    </div>
+    <div class="row-2">
+        <div class="pro-1">
+            <img src="5.jpg" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+        <div class="pro-2">
+             <img src="11.png" alt="imag" width="180px">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+    </div>
+    <div class="row-3">
+        <div class="pro-3">
+             <img src="9.png" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+        <div class="pro-4">
+             <img src="8-1.png" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+    </div>
+   </div>
+   <div class="card-1">
+    <div class="row-1">
+            <h2>Shop deals in Fashion</h2>
+    </div>
+    <div class="row-2">
+        <div class="pro-1">
+            <img src="7-1.png" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+        <div class="pro-2">
+             <img src="11.png" alt="imag" width="180px">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+    </div>
+    <div class="row-3">
+        <div class="pro-3">
+             <img src="6-1.png" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+        <div class="pro-4">
+             <img src="5.jpg" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+    </div>
+   </div>
+   <div class="card-1">
+    <div class="row-1">
+            <h2>Shop deals in Fashion</h2>
+    </div>
+    <div class="row-2">
+        <div class="pro-1">
+            <img src="1.jpg" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+        <div class="pro-2">
+             <img src="2.jpg" alt="imag" width="180px">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+    </div>
+    <div class="row-3">
+        <div class="pro-3">
+             <img src="3.png" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+        <div class="pro-4">
+             <img src="4.jpg" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+    </div>
+   </div>
+   </div>
+
+
+   <div class="cards-row1">
+   <div class="card-1">
+    <div class="row-1">
+            <h2>Shop deals in Fashion</h2>
+    </div>
+    <div class="row-2">
+        <div class="pro-1">
+            <img src="8-1.png" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+        <div class="pro-2">
+             <img src="7-1.png" alt="imag" width="180px">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+    </div>
+    <div class="row-3">
+        <div class="pro-3">
+             <img src="14.png" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+        <div class="pro-4">
+             <img src="6-1.png" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+    </div>
+   </div>
+   <div class="card-1">
+    <div class="row-1">
+            <h2>Shop deals in Fashion</h2>
+    </div>
+    <div class="row-2">
+        <div class="pro-1">
+            <img src="5.jpg" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+        <div class="pro-2">
+             <img src="4.jpg" alt="imag" width="180px">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+    </div>
+    <div class="row-3">
+        <div class="pro-3">
+             <img src="3.png" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+        <div class="pro-4">
+             <img src="2.jpg" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+    </div>
+   </div>
+   <div class="card-1">
+    <div class="row-1">
+            <h2>Shop deals in Fashion</h2>
+    </div>
+    <div class="row-2">
+        <div class="pro-1">
+            <img src="1.jpg" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+        <div class="pro-2">
+             <img src="7-1.png" alt="imag" width="180px">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+    </div>
+    <div class="row-3">
+        <div class="pro-3">
+             <img src="11.png" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+        <div class="pro-4">
+             <img src="9.png" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+    </div>
+   </div>
+   </div>
+
+
+   <div class="cards-row1">
+   <div class="card-1">
+    <div class="row-1">
+            <h2>Shop deals in Fashion</h2>
+    </div>
+    <div class="row-2">
+        <div class="pro-1">
+            <img src="8-1.png" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+        <div class="pro-2">
+             <img src="7-1.png" alt="imag" width="180px">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+    </div>
+    <div class="row-3">
+        <div class="pro-3">
+             <img src="14.png" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+        <div class="pro-4">
+             <img src="6-1.png" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+    </div>
+   </div>
+   <div class="card-1">
+    <div class="row-1">
+            <h2>Shop deals in Fashion</h2>
+    </div>
+    <div class="row-2">
+        <div class="pro-1">
+            <img src="5.jpg" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+        <div class="pro-2">
+             <img src="4.jpg" alt="imag" width="180px">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+    </div>
+    <div class="row-3">
+        <div class="pro-3">
+             <img src="3.png" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+        <div class="pro-4">
+             <img src="2.jpg" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+    </div>
+   </div>
+   <div class="card-1">
+    <div class="row-1">
+            <h2>Shop deals in Fashion</h2>
+    </div>
+    <div class="row-2">
+        <div class="pro-1">
+            <img src="5.jpg" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+        <div class="pro-2">
+             <img src="1.jpg" alt="imag" width="180px">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+    </div>
+    <div class="row-3">
+        <div class="pro-3">
+             <img src="11.png" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+        <div class="pro-4">
+             <img src="4.jpg" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+    </div>
+   </div>
+   </div>
+
+
+   <div class="cards-row1">
+   <div class="card-1">
+    <div class="row-1">
+            <h2>Shop deals in Fashion</h2>
+    </div>
+    <div class="row-2">
+        <div class="pro-1">
+            <img src="5.jpg" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+        <div class="pro-2">
+             <img src="9.png" alt="imag" width="180px">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+    </div>
+    <div class="row-3">
+        <div class="pro-3">
+             <img src="8-1.png" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+        <div class="pro-4">
+             <img src="4.jpg" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+    </div>
+   </div>
+   <div class="card-1">
+    <div class="row-1">
+            <h2>Shop deals in Fashion</h2>
+    </div>
+    <div class="row-2">
+        <div class="pro-1">
+            <img src="7-1.png" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+        <div class="pro-2">
+             <img src="6-1.png" alt="imag" width="180px">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+    </div>
+    <div class="row-3">
+        <div class="pro-3">
+             <img src="14.png" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+        <div class="pro-4">
+             <img src="5.jpg" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+    </div>
+   </div>
+   <div class="card-1">
+    <div class="row-1">
+            <h2>Shop deals in Fashion</h2>
+    </div>
+    <div class="row-2">
+        <div class="pro-1">
+            <img src="4.jpg" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+        <div class="pro-2">
+             <img src="3.png" alt="imag" width="180px">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+    </div>
+    <div class="row-3">
+        <div class="pro-3">
+             <img src="2.jpg" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+        <div class="pro-4">
+             <img src="1.jpg" alt="imag" width="180px" style="padding-left: 10px;">
+             <p style="padding-left: 50px;">Under 100$</p>
+        </div>
+    </div>
+   </div>
+   </div>
+   <!--Footer Section-->
+   <footer>
+     <div class="back">
+        <h3 style="text-align: center; padding-top: 10px;">Back to top</h3>
+     </div>
+     <div class="footer-section">
+          <div class="footer-row1">
+            <div class="col-1">
+                <h2>Get to Know Us</h2>
+                <a href="">Carteers</a>
+                <a href="">Blog</a> 
+                <a href="">About Amazon</a>
+                <a href="">Amazon Devices</a>
+                <a href="">Amazon Services</a>
+                <a href="">Investers Relations</a> 
+                <a href="">Carteers</a>
+                <a href="">Blog</a>
+            </div>
+            <div class="col-1">
+                <h2>Make Money With Us</h2>
+                <a href="">Carteers</a>
+                <a href="">Blog</a> 
+                <a href="">About Amazon</a>
+                <a href="">Amazon Devices</a>
+                <a href="">Amazon Services</a>
+                <a href="">Investers Relations</a> 
+                <a href="">Carteers</a>
+                <a href="">Blog</a>
+            </div>
+            <div class="col-1">
+                <h2>Amazon Payment Products</h2>
+                <a href="">Carteers</a>
+                <a href="">Blog</a> 
+                <a href="">About Amazon</a>
+                <a href="">Amazon Devices</a>
+                <a href="">Amazon Services</a>
+                <a href="">Investers Relations</a> 
+                <a href="">Carteers</a>
+                <a href="">Blog</a>
+            </div>
+            <div class="col-1">
+                <h2>Let Us Help You</h2>
+                <a href="">Carteers</a>
+                <a href="">Blog</a> 
+                <a href="">About Amazon</a>
+                <a href="">Amazon Devices</a>
+                <a href="">Amazon Services</a>
+                <a href="">Investers Relations</a> 
+                <a href="">Carteers</a>
+                <a href="">Blog</a>
+            </div>
+          </div>
+          <hr>
+          <div class="footer-row2">
+                 <div class="f-col1"> <img src="amazon.svg" alt="icon" width="40px"></div>
+                 <div class="f-col2"> 
+                    <img src="globe.svg" alt="icon" width="20px">
+                    <select name="select" id="lang-select">
+                        <option value="opt-1">English</option>
+                        <option value="opt-1">Urdu</option>
+                    </select>
+                </div>
+                <div class="f-col2"> 
+                    <img src="dollar.svg" alt="icon" width="20px">
+                    <select name="select" id="lang-select">
+                        <option value="opt-1">US-Dollor</option>
+                        <option value="opt-1">PK-Rupees</option>
+                    </select>
+                </div>
+                 <div class="f-col2"> 
+                    <img src="flag-usa.svg" alt="icon" width="20px">
+                    <select name="select" id="lang-select">
+                        <option value="opt-1">United State</option>
+                        <option value="opt-1">Pakistan</option>
+                    </select>
+          </div>
+     </div>
+     <p style="text-align: center; padding-top: 50px;">Developed By Muhammad Hanif | &copy;Honey| 2025</p>
+   </footer>
+</body>
+</html>
